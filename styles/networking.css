@@ -1,0 +1,11 @@
+
+.header {
+    background-color: #15162b;
+    background-image: unset;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
