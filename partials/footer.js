@@ -31,14 +31,14 @@ export default function setFooter(){
         <div class="footer__sections__callback">
             <div class="footer__sections__callback-title">Орг. контакты</div>
             <div class="footer__sections__callback__tel">
-                <img src="./images/phone.png" class="content-card__tel-img">
+                <img src="/images/phone.png" class="content-card__tel-img">
                 <p class="content-card__text">+38 (063) 738-40-20</p>
             </div>
             <div class="footer__sections__callback__email">
-                <img src="./images/mail.png" class="content-card__email-img">
+                <img src="/images/mail.png" class="content-card__email-img">
                 <p class="content-card__text">evoforum2020@gmail.com</p>
             </div>
-            <a href="#"><img src="./images/facebook.png"></a>
+            <a href="#"><img src="/images/facebook.png"></a>
         </div>
         
     </div>
