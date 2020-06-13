@@ -450,9 +450,6 @@ button {
     padding: 35px 35px 51px;
     margin: 10px;
 }
-.main__speaker-card:last-child {
-   
-}
 
 .main__speaker-card__title {
     color: #313131;
@@ -701,11 +698,13 @@ button {
     padding: 16px 21px;
     text-transform: none;
     margin-right: 12px;
+    text-align: center;
 }
 
 .main__support-button_active {
     color: #313131;
     font-weight: 600;
+    text-align: center;
 }
 
 .main__support-button_active:hover {
@@ -723,7 +722,7 @@ button {
 .main__support-cards {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
     flex-wrap: wrap;
 }
@@ -733,7 +732,7 @@ button {
     height: 105px;
     background-color: #8965b4;
     border-radius: 5px;
-    margin: 15px auto;
+    margin: 5px;
 }
 
 .main__support-card__active {
@@ -838,6 +837,7 @@ button {
 
 footer {
     background-color: #292929;
+    overflow: hidden;
 }
 
 .footer__container
@@ -849,6 +849,7 @@ footer {
 
 .footer__sections__content {
     display: flex;
+    position: relative;
 }
 
 .footer__sections__content-title {
@@ -931,6 +932,41 @@ footer {
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.4px;
+}
+
+.toTop-button {
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    box-shadow: 0 7px 13px rgba(0, 0, 0, 0.1);
+    background-color: #ff0000;
+    background-image: linear-gradient(-16deg, #efd855 0%, #fffbb6 100%);
+    position: fixed;
+    right: 103px;
+    z-index: 51;
+    bottom: -250px;
+    transition-duration: 1s;
+}
+
+.toTop-button__show {
+    bottom: 200px !important;
+    transition-duration: 1s;
+}
+
+.toTop__button-rect {
+    height: 15px;
+    width: 2px;
+    color: #313131;
+    transform: rotate(35deg);
+    position: absolute
+}
+
+.toTop__button-rect:last-child {
+    transform: rotate(-35deg);
+}
+
+.toTop__button-link{
+    position: absolute;
 }
 
 @media screen and (max-width: 1412px) {
@@ -1034,6 +1070,10 @@ footer {
 
 @media screen and (max-width: 768px) {
     
+    .header__hide__button{
+        display: none;
+    }
+
     .header__content {
         padding-bottom: 60px;
     }
@@ -1104,7 +1144,7 @@ footer {
         transform: rotate(-45deg);
     }
 
-    .header__button {
+    .header__hide__button {
         display: none;
     }
 

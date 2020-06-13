@@ -3,7 +3,7 @@
 import $ from 'jquery';
 
 export default function setHeader (){
-    $('.header').prepend(`
+    $('header').prepend(`
     <div class="background__texture"></div>
     <div class="header__main__container">
         <div class="header__container">
@@ -35,7 +35,7 @@ export default function setHeader (){
                         <a href="/pages/networking.html" class="header__nav-item">Нетворкинг</a>
                         <a href="#main__speaker-content" class="header__nav-item">Спикеры</a>
                         <a href="#main__participation__content" class="header__nav-item">Стоимость</a>
-                        <a href="#main__support__content" class="header__nav-item">Партнёры</a>
+                        <a href="/pages/partners.html" class="header__nav-item">Партнёры</a>
                         <a href="#main__place__content-card" class="header__nav-item">Контакты</a>
                     </nav>
                 </div>
@@ -57,7 +57,7 @@ export default function setHeader (){
                     </svg>
 
                 </a>
-                <button class="header__button" type="button">Заказать звонок</button>
+                <button class="header__button header__hide__button" type="button">Заказать звонок</button>
             </div>   
         </div>
 `);
