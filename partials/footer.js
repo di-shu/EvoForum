@@ -40,7 +40,7 @@ export default function setFooter(){
             </div>
             <a href="#"><img src="/images/facebook.png"></a>
         </div>
-        
+        <a href="#" class="toTop-button"><span class="toTop__button-rect"></span> <span class="toTop__button-rect"></span></a>
     </div>
 </div>
 <div class="footer__bottom">
